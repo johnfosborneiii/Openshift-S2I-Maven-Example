@@ -18,7 +18,7 @@ BUNDLE_NAME=${ARTIFACT_ID}-${ARTIFACT_VERSION}${BUNDLE_TYPE}
 BUNDLE_FULL_PATH="${NEXUS_URL}/${REPOSITORY_NAME}/${GROUP_ID}/${ARTIFACT_ID}/${ARTIFACT_VERSION_FULL}/$BUNDLE_NAME"
 
 echo "Started CURL Download from $BUNDLE_FULL_PATH"
-curl -L  "$BUNDLE_FULL_PATH" -o /opt/webserver/webapps/ROOT.war
+curl -L  "$BUNDLE_FULL_PATH" -o /deployments/ROOT.war
 
 if [ 0 -eq $? ]; then
   echo "Download complete"

@@ -6,7 +6,7 @@ echo "======= Starting JO Custom S2I Build ======="
 # /usr/local/s2i/assemble
 # http://localhost:8081/nexus/content/repositories/snapshots/org/jboss/as/quickstarts/jboss-as-kitchensink/7.1.1-SNAPSHOT/jboss-as-kitchensink-7.1.1-20161221.190119-1.war 
 
-NEXUS_URL="http://localhost:8081/nexus/content/repositories"
+NEXUS_URL="http://192.168.124.1:8081/nexus/content/repositories"
 REPOSITORY_NAME="snapshots"
 GROUP_ID="org/jboss/as/quickstarts"
 ARTIFACT_ID="jboss-as-kitchensink"
